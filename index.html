@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Kamran Khan | Customer Growth Analytics & Intelligent Automation</title>
-  <meta name="description" content="Applied customer analytics, retention insights, and intelligent automation decision signals. Public work: GitHub, Medium, LinkedIn." />
+  <title>Kamran Khan | Applied Analytics & Decision Intelligence</title>
+  <meta name="description" content="Applied analytics and decision intelligence across customer growth, healthcare operations, and telecom markets. Public work: GitHub, Medium, LinkedIn." />
 
   <style>
     :root{
@@ -20,18 +20,26 @@
     }
 
     *{box-sizing:border-box;}
+
     body{
       margin:0;
       font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
-      background: radial-gradient(1200px 600px at 20% 10%, rgba(110,168,255,.18), transparent 60%),
-                  radial-gradient(900px 500px at 80% 0%, rgba(155,255,221,.12), transparent 55%),
-                  var(--bg);
+      background:
+        radial-gradient(1200px 600px at 20% 10%, rgba(110,168,255,.18), transparent 60%),
+        radial-gradient(900px 500px at 80% 0%, rgba(155,255,221,.12), transparent 55%),
+        var(--bg);
       color: var(--text);
       line-height:1.6;
     }
 
-    a{color:var(--text); text-decoration:none;}
-    a:hover{opacity:.92;}
+    a{
+      color:var(--text);
+      text-decoration:none;
+    }
+
+    a:hover{
+      opacity:.92;
+    }
 
     .wrap{
       max-width: 980px;
@@ -58,6 +66,7 @@
       font-size: 34px;
       letter-spacing: .2px;
     }
+
     .title p{
       margin:0 0 14px;
       color: var(--muted);
@@ -65,9 +74,12 @@
     }
 
     .pills{
-      display:flex; flex-wrap:wrap; gap:10px;
-      margin-top: 10px;
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin-top:10px;
     }
+
     .pill{
       padding: 6px 10px;
       border-radius: 999px;
@@ -84,23 +96,29 @@
       flex-wrap:wrap;
       align-items:center;
       justify-content:flex-end;
-      min-width: 240px;
+      min-width:240px;
     }
+
     .btn{
       display:inline-flex;
       align-items:center;
       justify-content:center;
       gap:10px;
-      padding: 10px 14px;
-      border-radius: 12px;
-      border: 1px solid var(--line);
+      padding:10px 14px;
+      border-radius:12px;
+      border:1px solid var(--line);
       background: rgba(232,238,252,.06);
       color: var(--text);
-      font-weight: 600;
-      font-size: 14px;
+      font-weight:600;
+      font-size:14px;
       transition: transform .06s ease, background .15s ease, border-color .15s ease;
     }
-    .btn:hover{transform: translateY(-1px); background: rgba(232,238,252,.09);}
+
+    .btn:hover{
+      transform: translateY(-1px);
+      background: rgba(232,238,252,.09);
+    }
+
     .btn.primary{
       background: linear-gradient(90deg, rgba(110,168,255,.22), rgba(155,255,221,.12));
       border-color: rgba(110,168,255,.35);
@@ -109,61 +127,86 @@
     .grid{
       display:grid;
       grid-template-columns: 1.2fr .8fr;
-      gap: 18px;
-      margin-top: 18px;
+      gap:18px;
+      margin-top:18px;
     }
 
     .card{
-      padding: 20px;
+      padding:20px;
       border-radius: var(--radius);
-      border: 1px solid var(--line);
+      border:1px solid var(--line);
       background: rgba(15,26,51,.55);
       box-shadow: var(--shadow);
     }
 
     h2{
-      margin: 0 0 10px;
-      font-size: 18px;
-      letter-spacing: .2px;
+      margin:0 0 10px;
+      font-size:18px;
+      letter-spacing:.2px;
     }
 
-    .muted{color:var(--muted);}
-    .list{margin: 10px 0 0; padding-left: 18px;}
-    .list li{margin: 6px 0; color: var(--muted);}
+    .muted{
+      color:var(--muted);
+    }
+
+    .list{
+      margin:10px 0 0;
+      padding-left:18px;
+    }
+
+    .list li{
+      margin:6px 0;
+      color:var(--muted);
+    }
 
     .work{
       display:grid;
       grid-template-columns: 1fr;
-      gap: 14px;
-      margin-top: 10px;
+      gap:14px;
+      margin-top:10px;
     }
+
     .work-item{
-      padding: 16px;
-      border-radius: 14px;
-      border: 1px solid var(--line);
+      padding:16px;
+      border-radius:14px;
+      border:1px solid var(--line);
       background: rgba(232,238,252,.04);
     }
+
     .work-item h3{
-      margin: 0 0 6px;
-      font-size: 16px;
+      margin:0 0 6px;
+      font-size:16px;
     }
-    .work-item p{margin:0 0 12px; color: var(--muted);}
-    .links{display:flex; gap:10px; flex-wrap:wrap;}
+
+    .work-item p{
+      margin:0 0 12px;
+      color:var(--muted);
+    }
+
+    .links{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+    }
+
     .link{
-      font-size: 14px;
-      font-weight: 600;
-      color: var(--text);
-      border-bottom: 1px solid rgba(232,238,252,.18);
-      padding-bottom: 2px;
+      font-size:14px;
+      font-weight:600;
+      color:var(--text);
+      border-bottom:1px solid rgba(232,238,252,.18);
+      padding-bottom:2px;
     }
-    .link:hover{border-bottom-color: rgba(110,168,255,.6);}
+
+    .link:hover{
+      border-bottom-color: rgba(110,168,255,.6);
+    }
 
     footer{
-      margin-top: 22px;
-      padding-top: 14px;
-      border-top: 1px solid var(--line);
-      color: var(--muted);
-      font-size: 13px;
+      margin-top:22px;
+      padding-top:14px;
+      border-top:1px solid var(--line);
+      color:var(--muted);
+      font-size:13px;
       display:flex;
       justify-content:space-between;
       gap:14px;
@@ -171,9 +214,17 @@
     }
 
     @media (max-width: 860px){
-      .grid{grid-template-columns: 1fr;}
-      .cta{justify-content:flex-start;}
-      .title h1{font-size: 30px;}
+      .grid{
+        grid-template-columns: 1fr;
+      }
+
+      .cta{
+        justify-content:flex-start;
+      }
+
+      .title h1{
+        font-size:30px;
+      }
     }
   </style>
 </head>
@@ -185,8 +236,8 @@
       <div class="title">
         <h1>Kamran Khan</h1>
         <p>
-Applied analytics and decision intelligence across customer growth, healthcare operations, and telecom markets — transforming data into actionable insights for retention, operational prioritisation, and automation-ready decision systems.
-</p>
+          Applied analytics and decision intelligence across customer growth, healthcare operations, and telecom markets — transforming data into actionable insights for retention, operational prioritisation, and automation-ready decision systems.
+        </p>
 
         <div class="pills">
           <span class="pill">Customer Analytics</span>
@@ -199,7 +250,7 @@ Applied analytics and decision intelligence across customer growth, healthcare o
 
       <div class="cta">
         <a class="btn primary" href="https://github.com/kamranafridi9220-prog" target="_blank" rel="noopener">GitHub</a>
-        <a class="btn" href="https://medium.com/@kamranafridi9220/from-customer-data-to-automation-ready-decisions-607d188b38bb?postPublishedType=initial" target="_blank" rel="noopener">Medium</a>
+        <a class="btn" href="https://medium.com/@kamranafridi9220" target="_blank" rel="noopener">Medium</a>
         <a class="btn" href="https://www.linkedin.com/in/kamran-khan-9837b9141/" target="_blank" rel="noopener">LinkedIn</a>
       </div>
     </header>
@@ -225,15 +276,13 @@ Applied analytics and decision intelligence across customer growth, healthcare o
         <p class="muted" style="margin-top:0;">
           Public artifacts connected for easy review.
         </p>
-       <div class="links">
-<a class="link" href="https://github.com/kamranafridi9220-prog/customer-growth-analytics-python" target="_blank">Customer Growth Analytics</a>
 
-<a class="link" href="https://github.com/kamranafridi9220-prog/nhs-rtt-operational-pressure-framework-2025" target="_blank">NHS RTT Operational Pressure Analysis</a>
-
-<a class="link" href="https://github.com/kamranafridi9220-prog/uk-telecom-customer-switching-intelligence" target="_blank">UK Telecom Switching Intelligence</a>
-
-<a class="link" href="https://medium.com/@kamranafridi9220/why-most-telecom-customers-dont-switch-providers-a-data-insight-2b7889081a22" target="_blank">Medium Publications</a>
-</div>
+        <div class="links">
+          <a class="link" href="https://github.com/kamranafridi9220-prog/customer-growth-analytics-python" target="_blank" rel="noopener">Customer Growth Analytics</a>
+          <a class="link" href="https://github.com/kamranafridi9220-prog/nhs-rtt-operational-pressure-framework-2025" target="_blank" rel="noopener">NHS RTT Operational Pressure Analysis</a>
+          <a class="link" href="https://github.com/kamranafridi9220-prog/uk-telecom-customer-switching-intelligence" target="_blank" rel="noopener">UK Telecom Switching Intelligence</a>
+          <a class="link" href="https://medium.com/@kamranafridi9220" target="_blank" rel="noopener">Medium Publications</a>
+        </div>
 
         <h2 style="margin-top:16px;">Location</h2>
         <p class="muted" style="margin:0;">United Kingdom</p>
@@ -245,53 +294,76 @@ Applied analytics and decision intelligence across customer growth, healthcare o
 
       <div class="work">
         <div class="work-item">
-<h3>NHS Referral to Treatment Operational Pressure Analysis</h3>
-<p>
-Healthcare operational analytics project analysing NHS waiting-list pressure using national RTT datasets. The analysis introduces a composite pressure indicator to identify operational strain and support decision-making for healthcare backlog management.
-</p>
-<div class="links">
-<a class="link" href="https://github.com/kamranafridi9220-prog/nhs-rtt-operational-pressure-framework-2025" target="_blank">View repository</a>
-<a class="link" href="https://medium.com/@kamranafridi9220/beyond-the-18-week-standard-understanding-structural-pressure-in-nhs-waiting-lists-707d79c10bf9" target="_blank">Related article</a>
-</div>
-</div>
-<h3>UK Telecom Customer Switching Intelligence</h3>
-<p>
-Analysis of telecom switching behaviour using UK Ofcom Switching Tracker data. The project explores switching drivers, behavioural triggers behind provider changes, and strategic insights for proactive customer retention strategies in competitive telecom markets.
-</p>
-<div class="links">
-<a class="link" href="https://github.com/kamranafridi9220-prog/uk-telecom-customer-switching-intelligence" target="_blank">View repository</a>
-<a class="link" href="https://medium.com/@kamranafridi9220/why-most-telecom-customers-dont-switch-providers-a-data-insight-2b7889081a22" target="_blank">Related article</a>
-</div>
-</div>
+          <h3>NHS Referral to Treatment Operational Pressure Analysis</h3>
+          <p>
+            Healthcare operational analytics project analysing NHS waiting-list pressure using national RTT datasets. The analysis introduces a composite pressure indicator to identify operational strain and support decision-making for healthcare backlog management.
+          </p>
+          <div class="links">
+            <a class="link" href="https://github.com/kamranafridi9220-prog/nhs-rtt-operational-pressure-framework-2025" target="_blank" rel="noopener">View repository</a>
+            <a class="link" href="https://medium.com/@kamranafridi9220/beyond-the-18-week-standard-understanding-structural-pressure-in-nhs-waiting-lists-707d79c10bf9" target="_blank" rel="noopener">Related article</a>
+          </div>
+        </div>
+
+        <div class="work-item">
+          <h3>UK Telecom Customer Switching Intelligence</h3>
+          <p>
+            Analysis of telecom switching behaviour using UK Ofcom Switching Tracker data. The project explores switching drivers, behavioural triggers behind provider changes, and strategic insights for proactive customer retention strategies in competitive telecom markets.
+          </p>
+          <div class="links">
+            <a class="link" href="https://github.com/kamranafridi9220-prog/uk-telecom-customer-switching-intelligence" target="_blank" rel="noopener">View repository</a>
+            <a class="link" href="https://medium.com/@kamranafridi9220/why-most-telecom-customers-dont-switch-providers-a-data-insight-2b7889081a22" target="_blank" rel="noopener">Related article</a>
+          </div>
+        </div>
+
+        <div class="work-item">
           <h3>Customer Growth Analytics — Revenue, Retention, Segmentation</h3>
           <p>
             Python-based analysis using recent e-commerce transaction data (2023–2024), exploring revenue patterns, returning vs new customer contribution, and actionable customer segments — linked to intelligent automation opportunities.
           </p>
           <div class="links">
             <a class="link" href="https://github.com/kamranafridi9220-prog/customer-growth-analytics-python" target="_blank" rel="noopener">View repository</a>
-            <a class="link" href="https://medium.com/@kamranafridi9220/from-customer-data-to-automation-ready-decisions-607d188b38bb?postPublishedType=initial" target="_blank" rel="noopener">Read the article</a>
+            <a class="link" href="https://medium.com/@kamranafridi9220/from-customer-data-to-automation-ready-decisions-607d188b38bb" target="_blank" rel="noopener">Read the article</a>
           </div>
         </div>
       </div>
     </section>
-<section class="card" style="margin-top:18px;">
-  <h2>Publications</h2>
 
-  <div class="work">
-    <div class="work-item">
-      <h3>What Telecom Switching Data Reveals About Customer Behaviour</h3>
-      <p>
-        Medium article analysing UK telecom switching behaviour using Ofcom Switching Tracker data and exploring behavioural triggers behind customer switching decisions.
-      </p>
+    <section class="card" style="margin-top:18px;">
+      <h2>Publications</h2>
 
-      <div class="links">
-        <a class="link" href="https://medium.com/@kamranafridi9220/why-most-telecom-customers-dont-switch-providers-a-data-insight-2b7889081a22" target="_blank" rel="noopener">
-          Read article
-        </a>
+      <div class="work">
+        <div class="work-item">
+          <h3>What Telecom Switching Data Reveals About Customer Behaviour</h3>
+          <p>
+            Medium article analysing UK telecom switching behaviour using Ofcom Switching Tracker data and exploring behavioural triggers behind customer switching decisions.
+          </p>
+          <div class="links">
+            <a class="link" href="https://medium.com/@kamranafridi9220/why-most-telecom-customers-dont-switch-providers-a-data-insight-2b7889081a22" target="_blank" rel="noopener">Read article</a>
+          </div>
+        </div>
+
+        <div class="work-item">
+          <h3>Beyond the 18-Week Standard: Understanding Structural Pressure in NHS Waiting Lists</h3>
+          <p>
+            Medium article exploring how NHS RTT waiting-list data can reveal deeper operational pressure patterns and support more informed healthcare decision-making.
+          </p>
+          <div class="links">
+            <a class="link" href="https://medium.com/@kamranafridi9220/beyond-the-18-week-standard-understanding-structural-pressure-in-nhs-waiting-lists-707d79c10bf9" target="_blank" rel="noopener">Read article</a>
+          </div>
+        </div>
+
+        <div class="work-item">
+          <h3>From Customer Data to Automation-Ready Decisions</h3>
+          <p>
+            Medium article discussing how customer analytics can move beyond reporting and support retention, segmentation, and automation-ready commercial decision-making.
+          </p>
+          <div class="links">
+            <a class="link" href="https://medium.com/@kamranafridi9220/from-customer-data-to-automation-ready-decisions-607d188b38bb" target="_blank" rel="noopener">Read article</a>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
+
     <footer>
       <div>© <span id="y"></span> Kamran Khan</div>
       <div class="muted">Built on GitHub Pages</div>
@@ -303,4 +375,3 @@ Analysis of telecom switching behaviour using UK Ofcom Switching Tracker data. T
   </script>
 </body>
 </html>
-
